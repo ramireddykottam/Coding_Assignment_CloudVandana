@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="survey.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Customer Survey Form</h1>
+        <form id="surveyForm">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" required>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="checks">
+                    <input type="checkbox" id="male" class="marg" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input class="marg" type="checkbox" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <input class="marg" type="checkbox" id="Prefer not to say" name="gender" value="Female">
+                    <label for="Prefer not to say">Prefer not to say</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="profession">Profession:</label>
+                <input type="text" id="profession" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" required>
+            </div>
+
+            <div class="buttons">
+                <button type="button" id="submitBtn">Submit</button>
+                <button type="button" id="resetBtn">Reset</button>
+            </div>
+        </form>
+
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <h2>Submitted Data:</h2>
+                <div class="submitted-data">
+                    <span class="label">First Name:</span>
+                    <span id="popupFirstName"></span>
+                </div>
+                <div class="submitted-data">
+                    <span class="label">Last Name:</span>
+                    <span id="popupLastName"></span>
+                </div>
+                <div class="submitted-data">
+                    <span class="label">Date of Birth:</span>
+                    <span id="popupDob"></span>
+                </div>
+                <div class="submitted-data">
+                    <span class="label">Country:</span>
+                    <span id="popupCountry"></span>
+                </div>
+                <div class="submitted-data">
+                    <span class="label">Gender:</span>
+                    <span id="popupGender"></span>
+                </div>
+                <div class="submitted-data">
+                    <span class="label">Profession:</span>
+                    <span id="popupProfession"></span>
+                </div>
+                <div class="submitted-data">
+                    <span class="label">Email:</span>
+                    <span id="popupEmail"></span>
+                </div>
+                <div class="submitted-data">
+                    <span class="label">Mobile Number:</span>
+                    <span id="popupMobile"></span>
+                </div>
+                <button id="closePopup">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="survey.js"></script>
+</body>
+
+</html>
